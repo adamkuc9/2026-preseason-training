@@ -62,10 +62,14 @@ public final class Main {
     double wheelRadiusMeters = 0.0515507563;
     double wheelCircumferenceMeters = 2 * Math.PI * wheelRadiusMeters;
 
-    double rollerTargetVelocityRPS = 45.0;
-    double rollerTargetVelocityTolerance = 5.0;
-    boolean isRollerVelocityInTolerance = Math.abs(rollerTargetVelocityRPS - 45.0) <= rollerTargetVelocityTolerance;
-    System.out.println(isRollerVelocityInTolerance);
+    double target = 45.0;
+    double measured = 41.5;
+    double tolerance = 5.0;
+    double error = Math.abs(measured - target);
+    boolean atSpeed = (error <= tolerance);
+    System.out.println(error);
+    System.out.println(atSpeed);
+
 
     double wheelDiameter = 4.0;
     boolean hasFuel = true;
