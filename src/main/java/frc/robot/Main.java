@@ -21,5 +21,59 @@ public final class Main {
    */
   public static void main(String... args) {
     // RobotBase.startRobot(Robot::new);
+
+    System.out.println("Hello world!");
+
+    // Week 2:
+    System.out.println("Adam");
+
+    int x = 5;
+    System.out.println(x);
+
+    double topSpeed = 20.5;
+    System.out.println(topSpeed);
+
+    boolean canDoAutos = true;
+    System.out.println(canDoAutos);
+
+    String nameOfRobot = "Stella";
+    System.out.println(nameOfRobot);
+
+    double num1 = 10;
+    double num2 = 3;
+
+    System.out.println(num1 + num2);
+    System.out.println(num1 - num2);
+    System.out.println(num1 * num2);
+    System.out.println(num1 / num2);
+
+    // Robot math lab (week 2):
+
+    double topSpeedMPS = 4.936;
+    double mpstoMPH = 2.237;
+    double topSpeedMPH = topSpeedMPS * mpstoMPH;
+    System.out.println(topSpeedMPH);
+
+    int autoSeconds = 20;
+    int teleopSeconds = 140;
+    int matchSeconds = autoSeconds + teleopSeconds;
+    System.out.println("match time: " + matchSeconds / 60 + ":" + matchSeconds % 60);
+
+    double wheelRadiusMeters = 0.0515507563;
+    double wheelCircumferenceMeters = 2 * Math.PI * wheelRadiusMeters;
+
+    double rollerTargetVelocityRPS = 45.0;
+    double rollerTargetVelocityTolerance = 5.0;
+    boolean isRollerVelocityInTolerance = Math.abs(rollerTargetVelocityRPS - 45.0) <= rollerTargetVelocityTolerance;
+    System.out.println(isRollerVelocityInTolerance);
+
+    double wheelDiameter = 4.0;
+    boolean hasFuel = true;
+    String robotName = "Savanna";
+    int teamNumber = 3061;
+    double average = 5.0 / 2.0;
+    System.out.println(average);
+
   }
+
 }
